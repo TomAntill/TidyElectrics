@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img//apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img//favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        Details
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/paper-kit.css?v=2.2.0" rel="stylesheet" />
+    <script src="./assets/js/settings.js"></script>
+</head>
+<body>
+    <div id="loadingContent"> Loading...</div>
+    <div id="pageContent" style="display: none;">
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+            <a id="manage" class="nav-link text-dark" title="Manage" href="/Pictures?area=Identity&amp;page=%2FAccount%2FManage%2FIndex">Hello thomasantill92@gmail.com!</a>
+        </li>
+        <li class="nav-item">
+            <a id="logoutButton" style="font-weight: 500; color: #584f4a;">Logout</button>
+        </li>
+    </ul>
+    <h3>Image Details</h3>
+
+    <img src="" alt="Image" id="imageElement" style="max-width: 200px; margin-top: 30px; margin-bottom: 30px;">
+
+    <p><strong>Name:</strong> <span id="imageName"></span></p>
+    <p><strong>Upload Category:</strong> <span id="uploadCategory"></span></p>
+    <p><strong>Project Name:</strong> <span id="projectName"></span></p>
+
+    <button id="updateButton">Edit</button>
+    <button id="deleteButton">Delete</button>
+    <button id="returnToListButton">Return to List</button>
+
+</div>
+<script>
+    postLoadScript('html-details.js', true);
+</script>
+</body>
