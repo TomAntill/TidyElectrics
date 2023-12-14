@@ -9465,3 +9465,9 @@ body {
 .gi-bp {
   padding-bottom: 15px !important;
 }
+
+@media screen and (max-width: 600px) {
+  .gallery-heading {
+    padding-top: 2rem;
+  }
+}
